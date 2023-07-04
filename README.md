@@ -14,7 +14,7 @@ For simple use of the GA install with conda install the env file.
 
     conda env create --file environment.yml
 
-To run the ga activate the relevant environment and run the following for a quick run on a local installation:
+To run the GA activate the relevant environment and run the following for a quick run on a local installation:
 
 ```
 python GA_schrock.py --supress_amines --debug --average_size 10 --size_stdev 2 --scoring_func rdkit_embed_scoring_NH3toN2 --cpus_per_task 2 --population_size 3 --mating_pool_size 4
@@ -38,7 +38,7 @@ A list of possible commandline arguments.
 | `--sa_screening`     | Decides if synthetic accessibility score is enabled. Highly recommended to turn this on.                             |
 | `--file_name`        | Path to the database extract to create starting population.                                                          |
 | `--output_dir`       | Sets output directory for all files generated during generations.                                                    |
-| `--timeout`          | How many minutes each slurm job is allowed to run                                                                    |
+| `--timeout`          | How many minutes each slurm job is allowed to run.                                                                   |
 | `--debug`            | If set the starting population is a set of 4 small molecules that can run fast locally. Used for debugging.          |
 | `--ga_scoring`       | If set, removes all higher energy conformers in GA.                                                                  |
 | `--supress_amines`   | Supress amine heavy molecules by converting any primary amines to hydrogen in generations.                           |
@@ -51,9 +51,9 @@ A list of possible commandline arguments.
 | `--gbsa`             | Which type of solvent to use for xTB.                                                                                |
 | `--input`            | Name of input control file created for xTB                                                                           |
 | `--average_size`     | Average number of atoms in molecules resulting from crossover.                                                       |
-| `--size-stdev`       | STD of crossover molecule size distribution                                                                          |
+| `--size-stdev`       | STD of crossover size distribution for molecules.                                                                    |
 
-## Notes
+### Note
 
 This codebase is slightly outdated for the work we do on catalyst design with GAs. For the interested, this is a more robust codebase we are currently using for catalyst design: [catalystGA](https://github.com/juius/catalystGA)
 
