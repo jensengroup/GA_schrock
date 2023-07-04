@@ -1,0 +1,7 @@
+numpy
+ase
+tabulate
+scipy
+networkx
+submitit
+pandas

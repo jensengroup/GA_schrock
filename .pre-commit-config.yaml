@@ -1,0 +1,54 @@
+repos:
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+        args: ["--unsafe"]
+      - id: check-added-large-files
+        args: ['--maxkb=15000']
+
+  - repo: https://github.com/myint/autoflake
+    rev: v1.4
+    hooks:
+      - id: autoflake
+        name: Removes unused variables
+        args:
+          - --in-place
+          - --remove-all-unused-imports
+          - --expand-star-imports
+          - --ignore-init-module-imports
+
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: v5.7.0
+    hooks:
+      - id: isort
+        name: Sorts imports
+        args: [
+          # Align isort with black formatting
+          "--multi-line=3",
+          "--trailing-comma",
+          "--force-grid-wrap=0",
+          "--use-parentheses",
+          "--profile", "black"
+        ]
+
+  - repo: https://github.com/psf/black
+    rev: 22.6.0
+    hooks:
+      - id: black
+        name: Fixes formatting
+        language_version: python3
+
+  - repo: https://github.com/myint/docformatter
+    rev: v1.3.1
+    hooks:
+      - id: docformatter
+        args: [--in-place]
+        name: docformatter
+        description: 'Formats docstrings to follow PEP 257.'
+        entry: docformatter
+        language: python
+        types: [python]

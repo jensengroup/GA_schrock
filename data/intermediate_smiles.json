@@ -1,0 +1,107 @@
+{
+  "Mo": {
+    "smi": "Mo",
+    "charge": 0,
+    "spin": 1,
+    "mul": 2,
+    "num_added": 0
+  },
+  "Mo_N": {
+    "smi": "[N]",
+    "charge": 0,
+    "spin": 0,
+    "mul": 1,
+    "num_added": 1
+  },
+  "Mo_N2": {
+    "smi": "N#N",
+    "charge": 0,
+    "spin": 1,
+    "mul": 2,
+    "num_added": 2
+  },
+  "Mo_N2_NH3": {
+    "smi": "[NH3],N#N",
+    "charge": 0,
+    "spin": 1,
+    "mul": 2,
+    "num_added": 6
+  },
+  "Mo_NH": {
+    "smi": "[NH]",
+    "charge": 0,
+    "spin": 1,
+    "mul": 2,
+    "num_added": 2
+  },
+  "Mo_NH2": {
+    "smi": "[NH2]",
+    "charge": 0,
+    "spin": 2,
+    "mul": 3,
+    "num_added": 3
+  },
+  "Mo_NH2+": {
+    "smi": "[NH2]",
+    "charge": 1,
+    "spin": 1,
+    "mul": 2,
+    "num_added": 3
+  },
+  "Mo_NH3": {
+    "smi": "[NH3]",
+    "charge": 0,
+    "spin": 1,
+    "mul": 2,
+    "num_added": 4
+  },
+  "Mo_NH3+": {
+    "smi": "[NH3]",
+    "charge": 1,
+    "spin": 2,
+    "mul": 3,
+    "num_added": 4
+  },
+  "Mo_NH+": {
+    "smi": "[NH]",
+    "charge": 1,
+    "spin": 0,
+    "mul": 1,
+    "num_added": 2
+  },
+  "Mo_NNH": {
+    "smi": "[N-]=N",
+    "charge": 0,
+    "spin": 0,
+    "mul": 1,
+    "num_added": 3
+  },
+  "Mo_NNH2": {
+    "smi": "[N-]=[NH2]",
+    "charge": 0,
+    "spin": 1,
+    "mul": 2,
+    "num_added": 4
+  },
+  "Mo_NNH2+": {
+    "smi": "[N-]=[NH2]",
+    "charge": 1,
+    "spin": 0,
+    "mul": 1,
+    "num_added": 4
+  },
+  "Mo_NNH3+": {
+    "smi": "[N-]=[NH3]",
+    "charge": 1,
+    "spin": 1,
+    "mul": 2,
+    "num_added": 6
+  },
+  "Mo_NNH+": {
+    "smi": "[N-]=N",
+    "charge": 1,
+    "spin": 1,
+    "mul": 2,
+    "num_added": 3
+  }
+}
