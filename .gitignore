@@ -5,7 +5,6 @@
 *.stdout
 *.xyz
 .sdf
-*.mol
 *.tmp
 
 # Byte-compiled / optimized / DLL files
