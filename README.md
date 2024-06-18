@@ -1,18 +1,22 @@
-# GB-GA
+# GB-GA for the Schrock catalyst
 
-[Graph-based genetic algorithm](http://dx.doi.org/10.1039/C8SC05372C)
+Repository for the paper [Genetic algorithm-based re-optimization of the Schrock catalyst for dinitrogen fixation](https://peerj.com/articles/pchem-30/).
+The GA implementation is based on the [GB_GA](https://github.com/jensengroup/GB_GA).
 
-Repository for the paper: _Genetic algorithm-based re-optimization of the Schrock catalyst for dinitrogen fixation_
+### Note
 
-1. [GA](#gb-ga)
-2. [Run](#how-to-run)
-3. [Parameters](#parameters)
+This codebase is slightly outdated for the work we do on catalyst design with GAs. For the interested, this is a more robust codebase we are currently using for catalyst design: [catalystGA](https://github.com/juius/catalystGA). And for other updated work on the Schrock catalyst see: [genetic_algorithm_for_nitrogen_fixation](https://github.com/jensengroup/genetic_algorithm_for_nitrogen_fixation/tree/main)
+
+1. [How to run](#how-to-run)
+1. [Driver function arguments](driver-function-arguments)
 
 ## How to run
 
 For simple use of the GA install with conda install the env file.
 
-    conda env create --file environment.yml
+```
+conda env create --file environment.yml
+```
 
 To run the GA activate the relevant environment and run the following for a quick run on a local installation:
 
@@ -20,7 +24,7 @@ To run the GA activate the relevant environment and run the following for a quic
 python GA_schrock.py --supress_amines --debug --average_size 10 --size_stdev 2 --scoring_func rdkit_embed_scoring_NH3toN2 --cpus_per_task 2 --population_size 3 --mating_pool_size 4
 ```
 
-## Parameters
+### Driver function arguments
 
 A list of possible commandline arguments.
 
@@ -53,10 +57,6 @@ A list of possible commandline arguments.
 | `--average_size`     | Average number of atoms in molecules resulting from crossover.                                                       |
 | `--size-stdev`       | STD of crossover size distribution for molecules.                                                                    |
 
-### Note
-
-This codebase is slightly outdated for the work we do on catalyst design with GAs. For the interested, this is a more robust codebase we are currently using for catalyst design: [catalystGA](https://github.com/juius/catalystGA)
-
 # Authors
 
 **Magnus Strandgaard**<sup>1</sup>
@@ -64,4 +64,5 @@ This codebase is slightly outdated for the work we do on catalyst design with GA
 **Jan H. Jensen**<sup>1</sup>
 
 <sup>1</sup> Department of Chemistry, University of Copenhagen, 2100 Copenhagen Ø, Denmark.
-For any questions regarding the code, please dont hestitate to contact me at : _mastr@chem.ku.dk_.
+
+For any questions regarding the code, please do not hesitate to contact me at : _mastr@chem.ku.dk_.
